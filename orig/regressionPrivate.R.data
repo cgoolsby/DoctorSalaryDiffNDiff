@@ -1,0 +1,88 @@
+                                                         Value   Std..Error     t.value      p.value
+(Intercept)                                       1.357701e+05 4.996291e+04   2.7174179 6.599821e-03
+costelec                                          1.154474e+01 1.103267e+00  10.4641380 2.175197e-25
+costgas                                          -2.724618e+00 4.850569e-01  -5.6171101 2.036443e-08
+costwatr                                         -1.443387e+00 5.674417e-01  -2.5436754 1.099626e-02
+costfuel                                          1.055657e+00 8.724135e-01   1.2100420 2.263144e-01
+valueh                                           -5.317715e-03 6.224603e-04  -8.5430587 1.670049e-17
+perwt                                            -2.764737e+01 2.813360e+01  -0.9827173 3.257896e-01
+pernum                                           -2.006212e+04 3.216767e+03  -6.2367332 4.799106e-10
+as.factor(sex)Male                                6.919233e+04 4.351899e+03  15.8993421 1.078150e-55
+as.numeric(age)                                   8.662490e+02 1.846737e+02   4.6907008 2.788173e-06
+as.factor(marst)Married, spouse absent           -1.780705e+04 1.611444e+04  -1.1050371 2.691916e-01
+as.factor(marst)Married, spouse present           6.984049e+03 8.588867e+03   0.8131514 4.161662e-01
+as.factor(marst)Never married/single             -3.484052e+04 1.018908e+04  -3.4193988 6.321287e-04
+as.factor(marst)Separated                         3.055480e+03 2.251975e+04   0.1356800 8.920792e-01
+as.factor(marst)Widowed                          -5.610277e+04 2.381367e+04  -2.3559058 1.851228e-02
+as.factor(race)Black/African American/Negro      -8.070538e+04 4.549854e+04  -1.7738015 7.615096e-02
+as.factor(race)Chinese                           -6.139391e+04 4.556234e+04  -1.3474704 1.778839e-01
+as.factor(race)Japanese                          -1.953706e+04 5.265398e+04  -0.3710462 7.106173e-01
+as.factor(race)Other Asian or Pacific Islander   -5.168021e+04 4.489887e+04  -1.1510360 2.497672e-01
+as.factor(race)Other race, nec                   -9.517916e+04 4.913784e+04  -1.9369831 5.279823e-02
+as.factor(race)Three or more major races         -4.897950e+04 6.641830e+04  -0.7374397 4.608862e-01
+as.factor(race)Two major races                   -6.705851e+04 4.667980e+04  -1.4365637 1.508985e-01
+as.factor(race)White                             -5.609392e+04 4.464276e+04  -1.2565066 2.089854e-01
+as.factor(hcovany)With health insurance coverage  7.105382e+04 1.851453e+04   3.8377336 1.255586e-04
+as.factor(empstat)Not in labor force             -1.995388e+05 1.540786e+04 -12.9504529 8.236471e-38
+as.factor(empstat)Unemployed                     -8.922949e+04 3.088284e+04  -2.8892906 3.876116e-03
+as.factor(time)1                                  3.997379e+04 5.829076e+03   6.8576543 7.763520e-12
+as.factor(group1)1                                1.099903e+04 5.913531e+03   1.8599773 6.294174e-02
+time:group1                                      -4.852031e+03 7.958537e+03  -0.6096637 5.421096e-01
+[1] 5564
+[1] 29
+[1] NA
+
+Call:
+rlm(formula = outcome ~ costelec + costgas + costwatr + costfuel + 
+    valueh + perwt + pernum + as.factor(sex) + as.numeric(age) + 
+    as.factor(marst) + as.factor(race) + as.factor(hcovany) + 
+    as.factor(empstat) + as.factor(time) + as.factor(group1) + 
+    time:group1, data = data2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-340083 -104304  -16369  108809  721731 
+
+Coefficients:
+                                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                       1.358e+05  3.894e+04   3.487 0.000490 ***
+costelec                                          1.154e+01  1.962e+00   5.885 4.07e-09 ***
+costgas                                          -2.725e+00  7.158e-01  -3.807 0.000141 ***
+costwatr                                         -1.443e+00  7.768e-01  -1.858 0.063161 .  
+costfuel                                          1.056e+00  9.929e-01   1.063 0.287714    
+valueh                                           -5.318e-03  5.617e-04  -9.468  < 2e-16 ***
+perwt                                            -2.765e+01  2.285e+01  -1.210 0.226278    
+pernum                                           -2.006e+04  2.330e+03  -8.611  < 2e-16 ***
+as.factor(sex)Male                                6.919e+04  7.087e+03   9.763  < 2e-16 ***
+as.numeric(age)                                   8.662e+02  3.267e+02   2.651 0.008029 ** 
+as.factor(marst)Married, spouse absent           -1.781e+04  1.563e+04  -1.139 0.254754    
+as.factor(marst)Married, spouse present           6.984e+03  6.244e+03   1.119 0.263337    
+as.factor(marst)Never married/single             -3.484e+04  8.210e+03  -4.244 2.21e-05 ***
+as.factor(marst)Separated                         3.055e+03  2.166e+04   0.141 0.887828    
+as.factor(marst)Widowed                          -5.610e+04  3.149e+04  -1.781 0.074855 .  
+as.factor(race)Black/African American/Negro      -8.071e+04  3.707e+04  -2.177 0.029469 *  
+as.factor(race)Chinese                           -6.139e+04  3.494e+04  -1.757 0.078892 .  
+as.factor(race)Japanese                          -1.954e+04  3.863e+04  -0.506 0.613041    
+as.factor(race)Other Asian or Pacific Islander   -5.168e+04  3.625e+04  -1.426 0.153961    
+as.factor(race)Other race, nec                   -9.518e+04  3.750e+04  -2.538 0.011154 *  
+as.factor(race)Three or more major races         -4.898e+04  6.660e+04  -0.735 0.462124    
+as.factor(race)Two major races                   -6.706e+04  3.811e+04  -1.759 0.078532 .  
+as.factor(race)White                             -5.609e+04  3.558e+04  -1.577 0.114873    
+as.factor(hcovany)With health insurance coverage  7.105e+04  1.078e+04   6.594 4.43e-11 ***
+as.factor(empstat)Not in labor force             -1.995e+05  1.301e+04 -15.339  < 2e-16 ***
+as.factor(empstat)Unemployed                     -8.923e+04  2.829e+04  -3.154 0.001611 ** 
+as.factor(time)1                                  3.997e+04  5.164e+03   7.741 1.05e-14 ***
+as.factor(group1)1                                1.100e+04  8.988e+03   1.224 0.221065    
+time:group1                                      -4.852e+03  1.058e+04  -0.458 0.646608    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 88700 on 14496 degrees of freedom
+Multiple R-squared:  0.2018,	Adjusted R-squared:  0.6937 
+F-statistic: 4.248e+09 on 28 and 27 DF,  p-value: < 2.2e-16
+
+  group1  incearn
+1      0 216274.3
+2      1 207681.6
+pdf 
+  2 

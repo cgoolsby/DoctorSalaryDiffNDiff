@@ -1,0 +1,100 @@
+                                                            Value   Std..Error      t.value       p.value
+(Intercept)                                          1.165117e+01 2.832628e-01  41.13200944 7.125612e-319
+costelec                                             2.732027e-05 6.170201e-06   4.42777552  9.723631e-06
+costgas                                             -1.228514e-05 2.757026e-06  -4.45593992  8.534817e-06
+costwatr                                            -7.363777e-06 3.174027e-06  -2.32001070  2.038030e-02
+costfuel                                             5.012190e-06 5.026435e-06   0.99716607  3.187321e-01
+valueh                                              -3.556592e-08 3.423561e-09 -10.38857503  5.011648e-25
+perwt                                                8.064163e-06 1.685007e-04   0.04785833  9.618311e-01
+pernum                                              -1.059567e-01 1.822533e-02  -5.81370513  6.489051e-09
+as.numeric(age)                                      1.576871e-02 1.158891e-03  13.60672470  1.976598e-41
+as.factor(marst)Married, spouse absent              -1.854681e-01 8.173936e-02  -2.26901817  2.330959e-02
+as.factor(marst)Married, spouse present              4.178343e-02 4.447419e-02   0.93949825  3.475203e-01
+as.factor(marst)Never married/single                -1.679252e-01 5.077473e-02  -3.30725893  9.487822e-04
+as.factor(marst)Separated                           -1.216628e-01 1.305927e-01  -0.93162024  3.515777e-01
+as.factor(marst)Widowed                             -3.118384e-01 1.101321e-01  -2.83149393  4.651599e-03
+as.factor(race)Black/African American/Negro         -3.752300e-01 2.550954e-01  -1.47093984  1.413702e-01
+as.factor(race)Chinese                              -3.216676e-01 2.559336e-01  -1.25684011  2.088702e-01
+as.factor(race)Japanese                             -7.698823e-02 2.889752e-01  -0.26641808  7.899282e-01
+as.factor(race)Other Asian or Pacific Islander      -3.294908e-01 2.528470e-01  -1.30312293  1.925927e-01
+as.factor(race)Other race, nec                      -6.001624e-01 2.733331e-01  -2.19571761  2.815788e-02
+as.factor(race)Three or more major races            -2.710915e-01 3.160602e-01  -0.85772112  3.910875e-01
+as.factor(race)Two major races                      -3.087303e-01 2.615930e-01  -1.18019342  2.379794e-01
+as.factor(race)White                                -3.748773e-01 2.516800e-01  -1.48949932  1.364189e-01
+as.factor(hcovany)With health insurance coverage     2.095187e-01 1.041147e-01   2.01238344  4.423298e-02
+as.factor(empstat)Not in labor force                -1.509773e+00 9.224858e-02 -16.36635048  1.085489e-58
+as.factor(empstat)Unemployed                        -9.120360e-01 1.591179e-01  -5.73182624  1.051711e-08
+as.factor(classwkrd)Local govt employee             -1.564452e-01 8.526532e-02  -1.83480451  6.659395e-02
+as.factor(classwkrd)Self-employed, incorporated     -8.235375e-03 6.331612e-02  -0.13006760  8.965182e-01
+as.factor(classwkrd)Self-employed, not incorporated -3.037028e-01 7.143356e-02  -4.25154187  2.161689e-05
+as.factor(classwkrd)State govt employee             -8.553697e-02 6.950833e-02  -1.23060028  2.185302e-01
+as.factor(classwkrd)Unpaid family worker            -1.825019e-01 4.039649e-01  -0.45177653  6.514495e-01
+as.factor(classwkrd)Wage/salary at non-profit       -6.659032e-02 5.749472e-02  -1.15819885  2.468381e-01
+as.factor(classwkrd)Wage/salary, private            -1.644742e-02 5.592127e-02  -0.29411742  7.686804e-01
+as.factor(time)1                                     2.183017e-01 3.527692e-02   6.18823102  6.568795e-10
+as.factor(group1)1                                   3.436324e-02 3.422688e-02   1.00398398  3.154349e-01
+time:group1                                         -7.713767e-02 4.573079e-02  -1.68677764  9.170841e-02
+[1] 5042
+[1] 35
+[1] NA
+
+Call:
+rlm(formula = outcome ~ costelec + costgas + costwatr + costfuel + 
+    valueh + perwt + pernum + as.numeric(age) + as.factor(marst) + 
+    as.factor(race) + as.factor(hcovany) + as.factor(empstat) + 
+    as.factor(classwkrd) + as.factor(time) + as.factor(group1) + 
+    time:group1, data = data2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8081 -0.5049 -0.0078  0.5215  2.4727 
+
+Coefficients:
+                                                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                          1.165e+01  2.799e-01  41.620  < 2e-16 ***
+costelec                                             2.732e-05  1.150e-05   2.376 0.017530 *  
+costgas                                             -1.229e-05  3.926e-06  -3.130 0.001754 ** 
+costwatr                                            -7.364e-06  4.684e-06  -1.572 0.115972    
+costfuel                                             5.012e-06  4.335e-06   1.156 0.247657    
+valueh                                              -3.557e-08  3.633e-09  -9.791  < 2e-16 ***
+perwt                                                8.064e-06  1.707e-04   0.047 0.962320    
+pernum                                              -1.060e-01  1.662e-02  -6.377 1.86e-10 ***
+as.numeric(age)                                      1.577e-02  1.782e-03   8.849  < 2e-16 ***
+as.factor(marst)Married, spouse absent              -1.855e-01  6.575e-02  -2.821 0.004794 ** 
+as.factor(marst)Married, spouse present              4.178e-02  4.508e-02   0.927 0.353964    
+as.factor(marst)Never married/single                -1.679e-01  5.598e-02  -3.000 0.002707 ** 
+as.factor(marst)Separated                           -1.217e-01  1.381e-01  -0.881 0.378300    
+as.factor(marst)Widowed                             -3.118e-01  1.509e-01  -2.066 0.038817 *  
+as.factor(race)Black/African American/Negro         -3.752e-01  2.445e-01  -1.535 0.124857    
+as.factor(race)Chinese                              -3.217e-01  2.646e-01  -1.216 0.224145    
+as.factor(race)Japanese                             -7.699e-02  2.579e-01  -0.299 0.765277    
+as.factor(race)Other Asian or Pacific Islander      -3.295e-01  2.560e-01  -1.287 0.198091    
+as.factor(race)Other race, nec                      -6.002e-01  2.600e-01  -2.308 0.021000 *  
+as.factor(race)Three or more major races            -2.711e-01  3.187e-01  -0.851 0.394989    
+as.factor(race)Two major races                      -3.087e-01  2.491e-01  -1.240 0.215142    
+as.factor(race)White                                -3.749e-01  2.412e-01  -1.554 0.120162    
+as.factor(hcovany)With health insurance coverage     2.095e-01  8.565e-02   2.446 0.014450 *  
+as.factor(empstat)Not in labor force                -1.510e+00  1.872e-01  -8.063 8.00e-16 ***
+as.factor(empstat)Unemployed                        -9.120e-01  1.896e-01  -4.810 1.53e-06 ***
+as.factor(classwkrd)Local govt employee             -1.564e-01  5.285e-02  -2.960 0.003081 ** 
+as.factor(classwkrd)Self-employed, incorporated     -8.235e-03  6.062e-02  -0.136 0.891946    
+as.factor(classwkrd)Self-employed, not incorporated -3.037e-01  7.906e-02  -3.842 0.000123 ***
+as.factor(classwkrd)State govt employee             -8.554e-02  7.007e-02  -1.221 0.222232    
+as.factor(classwkrd)Unpaid family worker            -1.825e-01  4.665e-01  -0.391 0.695648    
+as.factor(classwkrd)Wage/salary at non-profit       -6.659e-02  3.510e-02  -1.897 0.057825 .  
+as.factor(classwkrd)Wage/salary, private            -1.645e-02  3.759e-02  -0.438 0.661697    
+as.factor(time)1                                     2.183e-01  2.953e-02   7.393 1.51e-13 ***
+as.factor(group1)1                                   3.436e-02  3.798e-02   0.905 0.365600    
+time:group1                                         -7.714e-02  4.671e-02  -1.651 0.098682 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5205 on 14496 degrees of freedom
+Multiple R-squared:  0.1758,	Adjusted R-squared:  0.7134 
+F-statistic: -1.435e+14 on 34 and 27 DF,  p-value: 1
+
+  group1  incearn
+1      0 161954.0
+2      1 153724.3
+pdf 
+  2 

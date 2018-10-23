@@ -1,0 +1,120 @@
+
+
+regressionAsian_Priv.R
+as.factor(time)1                                  4.239878e+04 1.490220e+04  2.84513510 4.516119e-03
+as.factor(group1)1                               -4.787586e+03 1.414877e+04 -0.33837476 7.351411e-01
+time:group1                                      -3.218282e+03 1.808630e+04 -0.17794037 8.588004e-01
+
+as.factor(time)1                                  4.240e+04  1.327e+04   3.194 0.001406 ** 
+as.factor(group1)1                               -4.788e+03  1.008e+04  -0.475 0.634668    
+time:group1                                      -3.218e+03  1.583e+04  -0.203 0.838877    
+
+Multiple R-squared:  0.2224,	Adjusted R-squared:  0.9357 
+
+
+regressionAsian_Self.R
+as.factor(time)1                                  5.156764e+04 2.286925e+04  2.2548902 2.452495e-02
+as.factor(group1)1                                2.945849e+04 2.060264e+04  1.4298403 1.533195e-01
+time:group1                                      -4.153738e+04 2.849425e+04 -1.4577460 1.454701e-01
+
+as.factor(time)1                                  5.157e+04  1.039e+04   4.963 7.03e-07 ***
+as.factor(group1)1                                2.946e+04  1.278e+04   2.305  0.02121 *  
+time:group1                                      -4.154e+04  2.936e+04  -1.415  0.15711    
+
+Multiple R-squared:  0.1013,	Adjusted R-squared:  0.964 
+
+
+regressionBlack_Priv.R
+as.factor(time)1                                 -1.909872e+04 2.058694e+04 -0.92771050 0.35446340
+as.factor(group1)1                                7.835012e+03 2.430493e+04  0.32236313 0.74745030
+time:group1                                       2.591725e+04 3.254167e+04  0.79643258 0.42654546
+
+as.factor(time)1                                 -1.910e+04  2.597e+04  -0.735 0.462076    
+as.factor(group1)1                                7.835e+03  2.124e+04   0.369 0.712249    
+time:group1                                       2.592e+04  4.133e+04   0.627 0.530624    
+
+Multiple R-squared:  0.1503,	Adjusted R-squared:  0.9843 
+
+
+regressionBlack_Self.R
+as.factor(time)1                                  6.093519e+03 3.463413e+04  0.1759397 0.860673852
+as.factor(group1)1                                2.947667e+04 3.445972e+04  0.8553950 0.394243899
+time:group1                                      -7.824333e+04 4.990221e+04 -1.5679331 0.119849421
+
+as.factor(time)1                                  6.094e+03  3.276e+04   0.186 0.852450    
+as.factor(group1)1                                2.948e+04  2.265e+04   1.302 0.193100    
+time:group1                                      -7.824e+04  4.796e+04  -1.631 0.102844    
+
+Multiple R-squared:  0.2471,	Adjusted R-squared:  0.9934 
+
+
+regressionFemale_Priv.R
+as.factor(time)1                                  2.380739e+04 7.609809e+03  3.1285140 1.781366e-03
+as.factor(group1)1                                6.469446e+03 7.452225e+03  0.8681227 3.854277e-01
+time:group1                                      -9.267394e+03 9.971852e+03 -0.9293554 3.528132e-01
+
+as.factor(time)1                                  2.381e+04  6.982e+03   3.410 0.000652 ***
+as.factor(group1)1                                6.469e+03  5.935e+03   1.090 0.275745    
+time:group1                                      -9.267e+03  9.245e+03  -1.002 0.316176    
+
+Multiple R-squared:  0.1036,	Adjusted R-squared:  0.8702 
+
+
+regressionFemale_Self.R
+as.factor(time)1                                  2.838905e+04 1.460104e+04  1.94431681 0.0521964271
+as.factor(group1)1                               -2.409532e+04 1.421062e+04 -1.69558517 0.0903413185
+time:group1                                       3.354082e+03 1.951054e+04  0.17191125 0.8635494087
+
+as.factor(time)1                                  2.839e+04  1.082e+04   2.623 0.008713 ** 
+as.factor(group1)1                               -2.410e+04  1.294e+04  -1.862 0.062589 .  
+time:group1                                       3.354e+03  2.222e+04   0.151 0.879996    
+
+Multiple R-squared:  0.07739,	Adjusted R-squared:  0.9457 
+
+
+regressionMale_Priv.R
+as.factor(time)1                                  4.567384e+04 7.601473e+03   6.00855170 2.067386e-09
+as.factor(group1)1                                1.311998e+04 7.849363e+03   1.67147041 9.471986e-02
+time:group1                                       6.625751e+03 1.060937e+04   0.62451856 5.323286e-01
+
+as.factor(time)1                                  4.567e+04  5.730e+03   7.971 1.70e-15 ***
+as.factor(group1)1                                1.312e+04  1.264e+04   1.038 0.299380    
+time:group1                                       6.626e+03  1.230e+04   0.539 0.590126    
+
+Multiple R-squared:  0.1682,	Adjusted R-squared:  0.8013 
+
+
+regressionMale_Self.R
+as.factor(time)1                                  5.073160e+04 8.152953e+03   6.22248137 5.635236e-10
+as.factor(group1)1                                2.034580e+04 7.995730e+03   2.54458285 1.099475e-02
+time:group1                                      -2.749301e+04 1.139071e+04  -2.41363575 1.585883e-02
+
+as.factor(time)1                                  5.073e+04  5.778e+03   8.780  < 2e-16 ***
+as.factor(group1)1                                2.035e+04  6.491e+03   3.135 0.001724 ** 
+time:group1                                      -2.749e+04  7.307e+03  -3.762 0.000169 ***
+
+Multiple R-squared:  0.143,	Adjusted R-squared:  0.8349 
+
+
+regressionWhite_Priv.R
+as.factor(time)1                                  4.232792e+04 6.742610e+03   6.277675739 3.813880e-10
+as.factor(group1)1                                1.438364e+04 6.913203e+03   2.080604178 3.753544e-02
+time:group1                                      -5.149228e+03 9.513581e+03  -0.541250211 5.883661e-01
+
+as.factor(time)1                                  4.233e+04  5.168e+03   8.190 2.82e-16 ***
+as.factor(group1)1                                1.438e+04  1.127e+04   1.276 0.201861    
+time:group1                                      -5.149e+03  1.295e+04  -0.398 0.690802    
+
+Multiple R-squared:  0.1999,	Adjusted R-squared:  0.7842 
+
+
+regressionWhite_Self.R
+as.factor(time)1                                  5.022527e+04 7.785230e+03   6.4513534 1.301119e-10
+as.factor(group1)1                                9.037190e+03 7.739595e+03   1.1676567 2.430445e-01
+time:group1                                      -1.991200e+04 1.101838e+04  -1.8071627 7.084402e-02
+
+as.factor(time)1                                  5.023e+04  6.748e+03   7.442 1.04e-13 ***
+as.factor(group1)1                                9.037e+03  7.543e+03   1.198 0.230872    
+time:group1                                      -1.991e+04  8.759e+03  -2.273 0.023022 *  
+
+Multiple R-squared:  0.1662,	Adjusted R-squared:  0.8375 

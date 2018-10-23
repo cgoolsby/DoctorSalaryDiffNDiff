@@ -1,0 +1,74 @@
+                                                            Value   Std..Error
+(Intercept)                                          1.125835e+01 1.014241e-01
+costelec                                             5.313806e-05 2.401873e-06
+costgas                                             -1.378825e-05 1.115112e-06
+costwatr                                            -8.021946e-06 1.239438e-06
+costfuel                                            -3.377562e-07 1.686314e-06
+valueh                                              -4.370758e-08 1.436519e-09
+perwt                                               -2.635768e-04 6.890807e-05
+pernum                                              -1.158887e-01 7.657526e-03
+as.factor(sex)Male                                   3.013777e-01 9.802164e-03
+as.numeric(age)                                      9.109623e-03 4.012648e-04
+as.factor(marst)Married, spouse absent              -1.531902e-01 3.655552e-02
+as.factor(marst)Married, spouse present              3.081536e-03 1.817561e-02
+as.factor(marst)Never married/single                -2.633517e-01 2.171029e-02
+as.factor(marst)Separated                            2.202786e-01 4.854142e-02
+as.factor(marst)Widowed                             -3.981530e-01 4.628557e-02
+as.factor(race)Black/African American/Negro         -1.614018e-01 9.164364e-02
+as.factor(race)Chinese                              -7.793939e-02 9.202210e-02
+as.factor(race)Japanese                             -9.011776e-03 1.100220e-01
+as.factor(race)Other Asian or Pacific Islander      -7.725174e-02 9.018761e-02
+as.factor(race)Other race, nec                      -2.454649e-01 9.968645e-02
+as.factor(race)Three or more major races             9.607324e-02 1.691235e-01
+as.factor(race)Two major races                      -1.488980e-01 9.552664e-02
+as.factor(race)White                                -1.129582e-01 8.954587e-02
+as.factor(hcovany)With health insurance coverage     4.611638e-01 3.340826e-02
+as.factor(empstat)Not in labor force                -1.511563e+00 3.322235e-02
+as.factor(empstat)Unemployed                        -1.359801e+00 7.128359e-02
+as.factor(classwkrd)Local govt employee             -1.358165e-01 3.383605e-02
+as.factor(classwkrd)Self-employed, incorporated      2.098775e-01 2.317872e-02
+as.factor(classwkrd)Self-employed, not incorporated -5.304006e-02 2.551907e-02
+as.factor(classwkrd)State govt employee             -1.117270e-01 2.739610e-02
+as.factor(classwkrd)Unpaid family worker            -1.106821e+00 2.832432e-01
+as.factor(classwkrd)Wage/salary at non-profit        9.584341e-02 2.294103e-02
+as.factor(classwkrd)Wage/salary, private             1.505094e-01 2.191905e-02
+as.factor(time)1                                    -4.232350e-02 1.606000e-02
+as.factor(group1)1                                   4.457778e-02 1.943133e-02
+time:group1                                         -2.452328e-02 2.153284e-02
+                                                         t.value       p.value
+(Intercept)                                         111.00270668  0.000000e+00
+costelec                                             22.12359662 1.040636e-107
+costgas                                             -12.36489804  4.796577e-35
+costwatr                                             -6.47224636  9.784053e-11
+costfuel                                             -0.20029267  8.412529e-01
+valueh                                              -30.42604073 1.076954e-200
+perwt                                                -3.82504965  1.309741e-04
+pernum                                              -15.13395607  1.412691e-51
+as.factor(sex)Male                                   30.74604064 7.736545e-205
+as.numeric(age)                                      22.70227345 2.843379e-113
+as.factor(marst)Married, spouse absent               -4.19061805  2.788824e-05
+as.factor(marst)Married, spouse present               0.16954237  8.653710e-01
+as.factor(marst)Never married/single                -12.13027173  8.545449e-34
+as.factor(marst)Separated                             4.53795126  5.699347e-06
+as.factor(marst)Widowed                              -8.60209812  8.149817e-18
+as.factor(race)Black/African American/Negro          -1.76118915  7.821519e-02
+as.factor(race)Chinese                               -0.84696378  3.970211e-01
+as.factor(race)Japanese                              -0.08190886  9.347197e-01
+as.factor(race)Other Asian or Pacific Islander       -0.85656712  3.916901e-01
+as.factor(race)Other race, nec                       -2.46236948  1.380706e-02
+as.factor(race)Three or more major races              0.56806577  5.699940e-01
+as.factor(race)Two major races                       -1.55870639  1.190750e-01
+as.factor(race)White                                 -1.26145586  2.071531e-01
+as.factor(hcovany)With health insurance coverage     13.80388449  3.141216e-43
+as.factor(empstat)Not in labor force                -45.49838510  0.000000e+00
+as.factor(empstat)Unemployed                        -19.07593126  1.036163e-80
+as.factor(classwkrd)Local govt employee              -4.01395955  5.983374e-05
+as.factor(classwkrd)Self-employed, incorporated       9.05474712  1.438246e-19
+as.factor(classwkrd)Self-employed, not incorporated  -2.07844827  3.767541e-02
+as.factor(classwkrd)State govt employee              -4.07820890  4.548502e-05
+as.factor(classwkrd)Unpaid family worker             -3.90767080  9.336664e-05
+as.factor(classwkrd)Wage/salary at non-profit         4.17781627  2.950394e-05
+as.factor(classwkrd)Wage/salary, private              6.86660121  6.685351e-12
+as.factor(time)1                                     -2.63533587  8.409137e-03
+as.factor(group1)1                                    2.29411932  2.178958e-02
+time:group1                                          -1.13887810  2.547619e-01

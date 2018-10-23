@@ -1,0 +1,86 @@
+                                                            Value   Std..Error     t.value       p.value
+(Intercept)                                          1.134651e+01 3.642859e-01 31.14727879 2.073964e-128
+costelec                                             1.142603e-05 1.896100e-05  0.60260676  5.469932e-01
+costgas                                             -5.801438e-06 8.216902e-06 -0.70603715  4.804333e-01
+costwatr                                            -1.095043e-05 9.454037e-06 -1.15828124  2.472003e-01
+costfuel                                             2.898602e-05 1.522364e-05  1.90401336  5.737639e-02
+valueh                                              -4.554201e-08 9.454141e-09 -4.81714944  1.837389e-06
+perwt                                                3.801049e-05 3.413832e-04  0.11134260  9.113811e-01
+pernum                                              -1.406822e-01 5.651044e-02 -2.48948966  1.305667e-02
+as.factor(sex)Male                                   2.414951e-01 7.151856e-02  3.37667703  7.800932e-04
+as.numeric(age)                                      9.878624e-04 3.337052e-03  0.29602845  7.673086e-01
+as.factor(marst)Married, spouse absent              -2.143753e-01 2.049826e-01 -1.04582156  2.960556e-01
+as.factor(marst)Married, spouse present              3.061334e-02 1.202944e-01  0.25448683  7.992048e-01
+as.factor(marst)Never married/single                -1.302932e-01 1.385796e-01 -0.94020453  3.474830e-01
+as.factor(marst)Separated                           -7.705783e-02 3.034368e-01 -0.25395017  7.996192e-01
+as.factor(marst)Widowed                             -7.180352e-01 3.011331e-01 -2.38444513  1.740803e-02
+as.factor(hcovany)With health insurance coverage     5.077277e-01 2.371938e-01  2.14056052  3.270339e-02
+as.factor(empstat)Not in labor force                -1.199704e+00 3.064597e-01 -3.91472137  1.006593e-04
+as.factor(empstat)Unemployed                        -8.461464e-01 5.893828e-01 -1.43564836  1.516125e-01
+as.factor(classwkrd)Local govt employee             -4.107621e-01 2.105298e-01 -1.95108790  5.150177e-02
+as.factor(classwkrd)Self-employed, incorporated     -6.063304e-02 1.621750e-01 -0.37387406  7.086273e-01
+as.factor(classwkrd)Self-employed, not incorporated  8.221001e-02 2.188187e-01  0.37569924  7.072705e-01
+as.factor(classwkrd)State govt employee             -2.401601e-01 1.918789e-01 -1.25162331  2.111846e-01
+as.factor(classwkrd)Unpaid family worker             1.782232e-02 8.750962e-01  0.02036613  9.837579e-01
+as.factor(classwkrd)Wage/salary at non-profit       -2.161509e-02 1.550445e-01 -0.13941223  8.891702e-01
+as.factor(classwkrd)Wage/salary, private            -1.110019e-01 1.467347e-01 -0.75648038  4.496519e-01
+as.factor(time)1                                     1.178550e-01 9.167106e-02  1.28562949  1.990579e-01
+as.factor(group1)1                                   4.984309e-02 1.005597e-01  0.49565689  6.203141e-01
+time:group1                                         -7.524825e-02 1.337013e-01 -0.56280873  5.737709e-01
+[1] 641
+[1] 28
+[1] NA
+
+Call:
+rlm(formula = outcome ~ costelec + costgas + costwatr + costfuel + 
+    valueh + perwt + pernum + as.factor(sex) + as.numeric(age) + 
+    as.factor(marst) + as.factor(hcovany) + as.factor(empstat) + 
+    as.factor(classwkrd) + as.factor(time) + as.factor(group1) + 
+    time:group1, data = data2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.9385 -0.5434  0.0718  0.5503  2.3325 
+
+Coefficients:
+                                                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                          1.135e+01  5.992e-01  18.937  < 2e-16 ***
+costelec                                             1.143e-05  1.738e-05   0.657 0.510935    
+costgas                                             -5.801e-06  7.870e-06  -0.737 0.461043    
+costwatr                                            -1.095e-05  9.364e-06  -1.169 0.242260    
+costfuel                                             2.899e-05  1.506e-05   1.924 0.054319 .  
+valueh                                              -4.554e-08  9.085e-09  -5.013 5.42e-07 ***
+perwt                                                3.801e-05  3.238e-04   0.117 0.906565    
+pernum                                              -1.407e-01  7.208e-02  -1.952 0.050988 .  
+as.factor(sex)Male                                   2.415e-01  6.438e-02   3.751 0.000177 ***
+as.numeric(age)                                      9.879e-04  4.315e-03   0.229 0.818924    
+as.factor(marst)Married, spouse absent              -2.144e-01  1.990e-01  -1.077 0.281429    
+as.factor(marst)Married, spouse present              3.061e-02  1.177e-01   0.260 0.794734    
+as.factor(marst)Never married/single                -1.303e-01  1.564e-01  -0.833 0.404715    
+as.factor(marst)Separated                           -7.706e-02  2.023e-01  -0.381 0.703285    
+as.factor(marst)Widowed                             -7.180e-01  3.639e-01  -1.973 0.048518 *  
+as.factor(hcovany)With health insurance coverage     5.077e-01  3.422e-01   1.484 0.137885    
+as.factor(empstat)Not in labor force                -1.200e+00  9.847e-01  -1.218 0.223105    
+as.factor(empstat)Unemployed                        -8.461e-01  2.161e-01  -3.915 9.07e-05 ***
+as.factor(classwkrd)Local govt employee             -4.108e-01  1.393e-01  -2.949 0.003193 ** 
+as.factor(classwkrd)Self-employed, incorporated     -6.063e-02  1.688e-01  -0.359 0.719380    
+as.factor(classwkrd)Self-employed, not incorporated  8.221e-02  2.655e-01   0.310 0.756881    
+as.factor(classwkrd)State govt employee             -2.402e-01  1.961e-01  -1.225 0.220627    
+as.factor(classwkrd)Unpaid family worker             1.782e-02  4.790e-01   0.037 0.970320    
+as.factor(classwkrd)Wage/salary at non-profit       -2.162e-02  1.518e-01  -0.142 0.886782    
+as.factor(classwkrd)Wage/salary, private            -1.110e-01  1.336e-01  -0.831 0.406224    
+as.factor(time)1                                     1.179e-01  1.352e-01   0.872 0.383428    
+as.factor(group1)1                                   4.984e-02  7.854e-02   0.635 0.525711    
+time:group1                                         -7.525e-02  1.587e-01  -0.474 0.635379    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1901 on 14496 degrees of freedom
+Multiple R-squared:  0.1472,	Adjusted R-squared:  0.9623 
+F-statistic: -3.03e+12 on 27 and 24 DF,  p-value: 1
+
+  group1  incearn
+1      0 175578.6
+2      1 173017.7
+pdf 
+  2 

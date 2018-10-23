@@ -1,0 +1,71 @@
+                                                         Value   Std..Error     t.value      p.value
+(Intercept)                                       7.922943e+04 5.837777e+04  1.35718499 1.749824e-01
+costelec                                          6.943936e+00 2.286423e+00  3.03703090 2.441748e-03
+costgas                                          -2.216247e+00 1.055873e+00 -2.09897084 3.603188e-02
+costwatr                                         -1.248247e+00 1.293641e+00 -0.96491028 3.347878e-01
+costfuel                                         -6.045931e-01 2.002102e+00 -0.30197918 7.627212e-01
+valueh                                           -5.924193e-03 1.274287e-03 -4.64902356 3.711298e-06
+perwt                                            -4.444627e+00 6.384844e+01 -0.06961215 9.445142e-01
+pernum                                           -2.421832e+04 5.948494e+03 -4.07133663 4.986416e-05
+as.factor(sex)Male                                6.548082e+04 8.740666e+03  7.49151383 1.331904e-13
+as.numeric(age)                                   1.693463e+03 4.311124e+02  3.92812409 9.058371e-05
+as.factor(marst)Married, spouse absent           -1.098394e+04 3.514093e+04 -0.31256824 7.546640e-01
+as.factor(marst)Married, spouse present           2.493060e+04 2.607487e+04  0.95611621 3.392097e-01
+as.factor(marst)Never married/single             -2.440355e+04 2.818500e+04 -0.86583449 3.867572e-01
+as.factor(marst)Separated                        -1.630435e+04 4.894105e+04 -0.33314261 7.390859e-01
+as.factor(marst)Widowed                           4.200964e+03 5.524522e+04  0.07604214 9.393985e-01
+as.factor(hcovany)With health insurance coverage  7.413812e+04 4.384997e+04  1.69072237 9.115438e-02
+as.factor(empstat)Not in labor force             -1.646795e+05 3.789207e+04 -4.34601465 1.505882e-05
+as.factor(empstat)Unemployed                      1.229320e+05 1.448679e+05  0.84857975 3.962876e-01
+as.factor(time)1                                  4.239878e+04 1.490220e+04  2.84513510 4.516119e-03
+as.factor(group1)1                               -4.787586e+03 1.414877e+04 -0.33837476 7.351411e-01
+time:group1                                      -3.218282e+03 1.808630e+04 -0.17794037 8.588004e-01
+[1] 1199
+[1] 21
+[1] NA
+
+Call:
+rlm(formula = outcome ~ costelec + costgas + costwatr + costfuel + 
+    valueh + perwt + pernum + as.factor(sex) + as.numeric(age) + 
+    as.factor(marst) + as.factor(hcovany) + as.factor(empstat) + 
+    as.factor(time) + as.factor(group1) + time:group1, data = data2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-349550  -93182  -19566  106403  584128 
+
+Coefficients:
+                                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                       7.923e+04  3.553e+04   2.230 0.025756 *  
+costelec                                          6.944e+00  2.280e+00   3.046 0.002322 ** 
+costgas                                          -2.216e+00  9.954e-01  -2.227 0.025994 *  
+costwatr                                         -1.248e+00  1.056e+00  -1.182 0.237320    
+costfuel                                         -6.046e-01  1.718e+00  -0.352 0.724856    
+valueh                                           -5.924e-03  8.961e-04  -6.611 3.94e-11 ***
+perwt                                            -4.445e+00  6.710e+01  -0.066 0.947190    
+pernum                                           -2.422e+04  3.029e+03  -7.995 1.40e-15 ***
+as.factor(sex)Male                                6.548e+04  7.303e+03   8.966  < 2e-16 ***
+as.numeric(age)                                   1.693e+03  3.361e+02   5.038 4.76e-07 ***
+as.factor(marst)Married, spouse absent           -1.098e+04  3.269e+04  -0.336 0.736853    
+as.factor(marst)Married, spouse present           2.493e+04  2.110e+04   1.181 0.237507    
+as.factor(marst)Never married/single             -2.440e+04  2.322e+04  -1.051 0.293391    
+as.factor(marst)Separated                        -1.630e+04  3.009e+04  -0.542 0.587959    
+as.factor(marst)Widowed                           4.201e+03  7.523e+04   0.056 0.955469    
+as.factor(hcovany)With health insurance coverage  7.414e+04  1.994e+04   3.718 0.000202 ***
+as.factor(empstat)Not in labor force             -1.647e+05  1.276e+04 -12.902  < 2e-16 ***
+as.factor(empstat)Unemployed                      1.229e+05  1.332e+04   9.231  < 2e-16 ***
+as.factor(time)1                                  4.240e+04  1.327e+04   3.194 0.001406 ** 
+as.factor(group1)1                               -4.788e+03  1.008e+04  -0.475 0.634668    
+time:group1                                      -3.218e+03  1.583e+04  -0.203 0.838877    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 40800 on 14496 degrees of freedom
+Multiple R-squared:  0.2224,	Adjusted R-squared:  0.9357 
+F-statistic: 650.4 on 20 and 26 DF,  p-value: < 2.2e-16
+
+  group1  incearn
+1      0 206117.4
+2      1 194640.9
+pdf 
+  2 

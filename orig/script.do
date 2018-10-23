@@ -1,0 +1,1 @@
+for i in `ls *.R`; do echo $i; echo "" >> final.data; echo "" >> final.data; echo $i>>final.data; ./$i> $i.data; awk '{if($1=="as.factor(time)1")print $0; if($1=="as.factor(group1)1")print $0; if($1=="time:group1"){print $0;print "";} if($1=="Multiple") print $0}' $i.data>>final.data; done
